@@ -21,11 +21,11 @@ public class TimeMath {
         System.out.printf(
                 "[LOG] До отката: " + "%d лет, %d месяцев, %d дней, %d часов, %d минут, %d секунд." + "\n",
                 period.getYears(), period.getMonths(), period.getDays(),
-                duration.toHours(), duration.toMinutes(), duration.toSeconds());
+                duration.toHoursPart(), duration.toMinutesPart(), duration.toSecondsPart());
 
 
         rollbackStr = String.format("%d дней " + "%d" + ":" + "%d" + ":" + "%d" + "\n",
-                period.getDays(), duration.toHours(), duration.toMinutes(), duration.toSeconds());
+                period.getDays(), duration.toHoursPart(), duration.toMinutesPart(), duration.toSecondsPart());
 
         new JsonManager().jsonManager();
     }
