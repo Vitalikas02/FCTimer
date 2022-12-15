@@ -24,6 +24,7 @@ public class FrameCreator implements ActionListener {
         b2.setBackground(Color.ORANGE);
         b2.setForeground(Color.BLACK);
         frame.add(b2);
+
     }
 
     public void mainGui() {
@@ -38,6 +39,7 @@ public class FrameCreator implements ActionListener {
         frame.add(dungeonAkr);
         dungeonAkr.setBounds(75, 27, 100, 20);
         frame.pack();
+
     }
     @Override
     public void actionPerformed(ActionEvent e) {

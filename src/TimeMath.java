@@ -27,7 +27,6 @@ public class TimeMath {
         rollbackStr = String.format("%d дней " + "%d" + ":" + "%d" + ":" + "%d" + "\n",
                 period.getDays(), duration.toHoursPart(), duration.toMinutesPart(), duration.toSecondsPart());
 
-        new JsonManager().jsonManager();
     }
 
     public static LocalDateTime getROLLBACK() { return ROLLBACK; }

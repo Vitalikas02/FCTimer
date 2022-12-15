@@ -1,44 +1,44 @@
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-
-public class JsonManager {
-    String akrDungeon = "AkrDungeon";
-    Gson gson = new GsonBuilder().setPrettyPrinting().create();
-    Test jsonManager() throws IOException {
-        File file = new File("timings.json");
-//        if (file.exists() && !file.isDirectory()) {
-//            System.out.println("[SYSTEM] Файл найден.");
+//import com.google.gson.Gson;
+//import com.google.gson.GsonBuilder;
 //
-//            try (FileReader reader = new FileReader("timings.json")) {
-//                Test rootRead = gson.fromJson(reader, Test.class);
-//                System.out.println("[READ] Значение: " + "\n" + rootRead);
-//            }
-//            return null;
-//        }
+//import java.io.File;
+//import java.io.FileWriter;
+//import java.io.IOException;
 //
-//        else
-            System.out.println("[SYSTEM] Файл не найден, создаём новый.");
-                file.createNewFile();
-            System.out.println("[SYSTEM] Новый файл создан.");
-
-        FileWriter writer = new FileWriter("timings.json");
-        writer.write(gson.toJson(TimeMath.getROLLBACK()));
-        writer.close();
-        System.out.println("[WRITE] Значение обновлено.");
-
-        return null;
-    }
-}
-
-
-
-
-
-
+//public class JsonManager {
+//    String akrDungeon = "AkrDungeon";
+//    Gson gson = new GsonBuilder().setPrettyPrinting().create();
+//    Test jsonManager() throws IOException {
+//        File file = new File("timings.json");
+////        if (file.exists() && !file.isDirectory()) {
+////            System.out.println("[SYSTEM] Файл найден.");
+////
+////            try (FileReader reader = new FileReader("timings.json")) {
+////                Test rootRead = gson.fromJson(reader, Test.class);
+////                System.out.println("[READ] Значение: " + "\n" + rootRead);
+////            }
+////            return null;
+////        }
+////
+////        else
+//            System.out.println("[SYSTEM] Файл не найден, создаём новый.");
+//                file.createNewFile();
+//            System.out.println("[SYSTEM] Новый файл создан.");
+//
+//        FileWriter writer = new FileWriter("timings.json");
+//        writer.write(gson.toJson(TimeMath.getROLLBACK()));
+//        writer.close();
+//        System.out.println("[WRITE] Значение обновлено.");
+//
+//        return null;
+//    }
+//}
+//
+//
+//
+//
+//
+//
 
 
 
