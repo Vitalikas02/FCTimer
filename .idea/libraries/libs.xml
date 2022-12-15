@@ -10,6 +10,8 @@
       <root url="jar://$PROJECT_DIR$/libs/snakeyaml-1.30.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/stax2-api-4.2.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/woodstox-core-6.2.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/json-simple-1.1-bundle.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/json-simple-1.1.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

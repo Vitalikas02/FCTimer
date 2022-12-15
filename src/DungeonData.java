@@ -8,6 +8,9 @@ public class DungeonData {
         this.name = name;
         this.rollback = rollback;
     }
+    DungeonData(String rollback){
+        this.rollback = rollback;
+    }
 
     public int getId() {
         return id;

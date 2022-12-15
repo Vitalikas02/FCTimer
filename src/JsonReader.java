@@ -1,11 +1,38 @@
-//import java.io.IOException;
-//
-//public class JsonReader {
-//
-//    void jsonReader() throws IOException {
-//
-//    }
-//}
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Objects;
+
+
+public class JsonReader {
+    public static int dungeonMassiveNumber = 0;
+
+    void jsonReader() throws IOException, ParseException {
+        Object obj = new JSONParser().parse(new FileReader("timings.json"));
+        JSONObject jsonObject =  (JSONObject) obj;
+        JSONArray dungeonList = (JSONArray) jsonObject.get("dungeonsList");
+        JSONObject dungeonObj = (JSONObject) dungeonList.get(dungeonMassiveNumber);
+
+        String rollback = (String) dungeonObj.get("rollback");
+        if (Objects.equals(rollback, "none")){
+            JsonWriter.soloWriter();
+        }
+    }
+
+
+
+    public static int getDungeonMassiveNumber() {
+        return dungeonMassiveNumber;
+    }
+
+    public static void setDungeonMassiveNumber(int dungeonMassiveNumber) {
+        JsonReader.dungeonMassiveNumber = dungeonMassiveNumber;
+    }
+}
 //
 //
 //
