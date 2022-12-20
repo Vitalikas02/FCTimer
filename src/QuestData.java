@@ -1,19 +1,19 @@
 public class QuestData {
-    private int id;
+    private String id;
     private String name;
     private String rollback;
 
-    QuestData(int id, String name, String rollback) {
+    QuestData(String id, String name, String rollback) {
         this.id = id;
         this.name = name;
         this.rollback = rollback;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

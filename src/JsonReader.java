@@ -32,6 +32,7 @@ public class JsonReader {
     public static void setDungeonMassiveNumber(int dungeonMassiveNumber) {
         JsonReader.dungeonMassiveNumber = dungeonMassiveNumber;
     }
+
 }
 //
 //

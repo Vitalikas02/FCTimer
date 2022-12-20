@@ -1,9 +1,9 @@
 public class DungeonData {
-    private int id;
+    private String id;
     private String name;
     private String rollback;
 
-    DungeonData(int id, String name, String rollback) {
+    DungeonData(String id, String name, String rollback) {
         this.id = id;
         this.name = name;
         this.rollback = rollback;
@@ -12,11 +12,11 @@ public class DungeonData {
         this.rollback = rollback;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
